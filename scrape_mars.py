@@ -95,7 +95,7 @@ def scrape():
     tables = pd.read_html(url)
     df=tables[0]
     #print(df)
-    table_html = df.to_string(sparsify=False)
+    table_html = df.to_html()
     
 
     # In[14]:
